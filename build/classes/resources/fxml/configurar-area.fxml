@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="372.0" prefWidth="733.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pontoeletronico.controller.ConfiguracaoAreaController">
+   <children>
+      <Text layoutX="32.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Local de Instalação" wrappingWidth="636.88671875">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="32.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Instância">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="31.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comarca/Secretaria">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="32.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vara/Departamento">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="cbInstancia" layoutX="168.0" layoutY="107.0" onAction="#comboInstanciaActionPerformed" prefHeight="25.0" prefWidth="375.0" />
+      <ComboBox fx:id="cbComarcaSecretaria" layoutX="201.0" layoutY="158.0" onAction="#comboComarcaSecretariaActionPerformed" prefHeight="25.0" prefWidth="500.0" />
+      <ComboBox fx:id="cbVaraDepartamento" layoutX="201.0" layoutY="211.0" onAction="#comboVaraDepartamentoActionPerformed" prefHeight="25.0" prefWidth="500.0" />
+      <Button fx:id="btSalvar" disable="true" layoutX="83.0" layoutY="280.0" mnemonicParsing="false" onAction="#actionSalvar" text="Salvar" />
+      <Button fx:id="btSair" layoutX="656.0" layoutY="280.0" mnemonicParsing="false" onAction="#actionSair" prefHeight="25.0" prefWidth="45.0" text="Sair" />
+      <Button fx:id="btCancelar" disable="true" layoutX="135.0" layoutY="280.0" mnemonicParsing="false" onAction="#actionCancelar" text="Cancelar" />
+      <Button fx:id="btEditar" layoutX="32.0" layoutY="280.0" mnemonicParsing="false" onAction="#actionEditar" text="Editar" />
+   </children>
+</AnchorPane>

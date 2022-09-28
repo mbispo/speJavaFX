@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="262.0" prefWidth="510.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pontoeletronico.controller.ConfiguracaoController">
+   <children>
+      <Button layoutX="51.0" layoutY="110.0" mnemonicParsing="false" onAction="#actionCadastrarDigital" text="Cadastrar Digitais">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="277.0" layoutY="110.0" mnemonicParsing="false" onAction="#actionConfigurarArea" prefHeight="39.0" prefWidth="175.0" text="Configurar Área">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Text fill="#2c2828" fontSmoothingType="LCD" layoutX="27.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Configurações">
+         <font>
+            <Font name="Arial" size="30.0" />
+         </font>
+      </Text>
+      <Button layoutX="51.0" layoutY="185.0" mnemonicParsing="false" onAction="#actionConfigurarDataHora" prefHeight="39.0" prefWidth="175.0" text="Data/Hora">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="277.0" layoutY="185.0" mnemonicParsing="false" onAction="#actionAtalhos" prefHeight="39.0" prefWidth="175.0" text="Atalhos">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="366.0" layoutY="32.0" mnemonicParsing="false" onAction="#actionSair" text="  Sair    ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

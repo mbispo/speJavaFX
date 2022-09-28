@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox prefHeight="792.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pontoeletronico.controller.DigitalController">
+   <children>
+      <VBox>
+         <children>
+            <Button fx:id="btnFechar" mnemonicParsing="false" onAction="#actionSair" onKeyPressed="#actionKeyPressed" text="Fechar" />
+            <TextField fx:id="inputFuncionario" editable="false" onKeyPressed="#actionKeyPressed" prefHeight="25.0" prefWidth="381.0" />
+         </children>
+      </VBox>
+      <HBox prefHeight="300.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="lbImagemOrigem" fitHeight="534.0" fitWidth="380.0" onKeyPressed="#actionKeyPressed" pickOnBounds="true" preserveRatio="true">
+               <viewport>
+                  <Rectangle2D width="380.0" />
+               </viewport></ImageView>
+            <ImageView fx:id="lbImagemProcessada" fitHeight="534.0" fitWidth="380.0" onKeyPressed="#actionKeyPressed" pickOnBounds="true" preserveRatio="true">
+               <viewport>
+                  <Rectangle2D width="380.0" />
+               </viewport></ImageView>
+         </children></HBox>
+      <VBox prefHeight="246.0" prefWidth="760.0">
+         <children>
+            <TextField fx:id="inputStatus" editable="false" onKeyPressed="#actionKeyPressed" prefHeight="73.0" prefWidth="760.0">
+               <font>
+                  <Font size="20.0" />
+               </font></TextField>
+            <TextField fx:id="inputMensagem" editable="false" onKeyPressed="#actionKeyPressed" prefHeight="68.0" prefWidth="760.0" style="-fx-background-color: #000000; -fx-fill: #49f149;">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextField>
+            <Text fx:id="inputScaner" strokeType="OUTSIDE" strokeWidth="0.0" text="Scanner Indefinido" />
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="751.0" prefWidth="972.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pontoeletronico.controller.CadastroDigitalController">
+   <children>
+      <Label layoutX="34.0" layoutY="35.0" text="Matrícula:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="76.0" text="Nome:" />
+      <Label layoutX="33.0" layoutY="110.0" text="Lotação atual:" />
+      <TextField fx:id="edtMatricula" layoutX="114.0" layoutY="33.0" onKeyPressed="#actionMatriculaKeyPressed">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btPesquisar" layoutX="302.0" layoutY="36.0" mnemonicParsing="false" onAction="#actionPesquisar" onKeyPressed="#actionMatriculaKeyPressed" text="Pesquisar" />
+      <TextField fx:id="edtNome" editable="false" focusTraversable="false" layoutX="114.0" layoutY="72.0" prefHeight="25.0" prefWidth="514.0" />
+      <TextField fx:id="edtLotacao" editable="false" focusTraversable="false" layoutX="114.0" layoutY="106.0" prefHeight="25.0" prefWidth="829.0" AnchorPane.leftAnchor="114.0" AnchorPane.rightAnchor="29.0" />
+      <Label layoutX="33.0" layoutY="158.0" text="Digitais cadastradas" />
+      <TableView fx:id="gridDigitais" layoutX="33.0" layoutY="188.0" prefHeight="433.0" prefWidth="910.0" AnchorPane.bottomAnchor="130.0" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="29.0" AnchorPane.topAnchor="188.0">
+        <columns>
+          <TableColumn fx:id="colunaId" editable="false" prefWidth="44.0" text="Id" />
+          <TableColumn fx:id="colunaDataCriacao" editable="false" minWidth="100.0" prefWidth="181.0" text="Data de criação" />
+            <TableColumn fx:id="colunaDigital" minWidth="550.0" prefWidth="550.0" text="Digital" />
+        </columns>
+      </TableView>
+      <Button fx:id="btNovaDigital" layoutX="33.0" layoutY="633.0" mnemonicParsing="false" onAction="#actionNovaDigital" text="Nova digital" AnchorPane.bottomAnchor="93.0" AnchorPane.leftAnchor="33.0" />
+      <Button fx:id="btApagarDigital" layoutX="129.0" layoutY="633.0" mnemonicParsing="false" onAction="#actionApagarDigital" text="Apagar digital" AnchorPane.bottomAnchor="93.0" />
+      <Button fx:id="btSincronizarDados" layoutX="234.0" layoutY="633.0" mnemonicParsing="false" onAction="#actionSincronizar" text="Sincronizar dados" AnchorPane.bottomAnchor="93.0" />
+      <CheckBox fx:id="checkAtualizarDigitais" layoutX="353.0" layoutY="637.0" mnemonicParsing="false" text="Atualizar digitais/funcionarios" AnchorPane.bottomAnchor="97.0" />
+      <TextArea fx:id="txtMensagem" editable="false" focusTraversable="false" layoutX="33.0" layoutY="670.0" prefHeight="66.0" prefWidth="910.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="29.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="381.0" layoutY="40.0" text="Digite a matrícula, pressione &lt;ENTER&gt; para pesquisar" />
+      <Separator layoutX="33.0" layoutY="141.0" prefHeight="9.0" prefWidth="910.0" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="29.0" />
+      <Button fx:id="btSair" layoutX="907.0" layoutY="36.0" mnemonicParsing="false" onAction="#actionSair" onKeyPressed="#actionMatriculaKeyPressed" text="Sair" AnchorPane.rightAnchor="29.0" />
+      <ProgressBar fx:id="barraProgresso" layoutX="544.0" layoutY="637.0" prefHeight="18.0" prefWidth="399.0" progress="0.0" AnchorPane.bottomAnchor="96.0" AnchorPane.leftAnchor="544.0" AnchorPane.rightAnchor="29.0" />
+   </children>
+</AnchorPane>

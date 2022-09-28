@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/marcos.bispo/Documents/NetBeansProjects/speJavaFX/src/pontoeletronico/controller/PrincipalController.java</file>
+            <file>file:/C:/Users/marcos.bispo/Documents/NetBeansProjects/speJavaFX/src/pontoeletronico/controller/DataHoraPontoController.java</file>
+            <file>file:/C:/Users/marcos.bispo/Documents/NetBeansProjects/speJavaFX/src/pontoeletronico/controller/LoginController.java</file>
+            <file>file:/C:/Users/marcos.bispo/Documents/NetBeansProjects/speJavaFX/src/pontoeletronico/controller/DigitalController.java</file>
+            <file>file:/C:/Users/marcos.bispo/Documents/NetBeansProjects/speJavaFX/src/pontoeletronico/controller/CadastroDigitalController.java</file>
+            <file>file:/C:/Users/marcos.bispo/Documents/NetBeansProjects/speJavaFX/src/pontoeletronico/controller/SenhaController.java</file>
+            <file>file:/C:/Users/marcos.bispo/Documents/NetBeansProjects/speJavaFX/src/pontoeletronico/factory/ServiceRemoteFactory.java</file>
+            <file>file:/C:/Users/marcos.bispo/Documents/NetBeansProjects/speJavaFX/src/pontoeletronico/controller/Main.java</file>
+            <file>file:/C:/Users/marcos.bispo/Documents/NetBeansProjects/speJavaFX/src/pontoeletronico/config/SpeConfig.java</file>
+            <file>file:/C:/Users/marcos.bispo/Documents/NetBeansProjects/speJavaFX/src/pontoeletronico/tipo/TipoOperacao.java</file>
+            <file>file:/C:/Users/marcos.bispo/Documents/NetBeansProjects/speJavaFX/src/pontoeletronico/bean/Funcionario.java</file>
+            <file>file:/C:/Users/marcos.bispo/Documents/NetBeansProjects/speJavaFX/src/pontoeletronico/log/LogMachine.java</file>
+            <file>file:/C:/Users/marcos.bispo/Documents/NetBeansProjects/speJavaFX/src/pontoeletronico/service/ConfiguracaoService.java</file>
+        </group>
+    </open-files>
+</project-private>
